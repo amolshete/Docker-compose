@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: node:14
+    container_name: my_frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/usr/src/app
+    working_dir: /usr/src/app
+    command: npm start
+
+  backend:
+    image: node:14
+    container_name: my_backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/usr/src/app
+    working_dir: /usr/src/app
+    command: npm start
