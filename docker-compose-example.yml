@@ -20,3 +20,12 @@ services:
       - ./backend:/usr/src/app
     working_dir: /usr/src/app
     command: npm start
+
+
+
+Explanation:
+This example defines two services, "frontend" and "backend," both using the Node.js 14 image.
+Each service has its own container name, and they expose ports 3000 and 5000 for the frontend and backend, respectively.
+The "./frontend" and "./backend" directories on the host machine are mounted into the corresponding containers as "/usr/src/app".
+The working directory inside each container is set to "/usr/src/app".
+The "npm start" command is used to start the React frontend and Express backend applications.
