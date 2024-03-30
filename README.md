@@ -31,9 +31,9 @@ Compose simplifies the control of your entire application stack, making it easy 
 1. Clone this repository to your local machine.
 2. Installed the latest version of Docker Compose
 3. Run the following commands:
-docker compose up
-
-Compose pulls a Redis image, builds an image for your code, and starts the services you defined. In this case, the code is statically copied into the image at build time.
+   docker compose up
+   Compose pulls a Redis image, builds an image for your code, and starts the services you defined. In this case, the code is 
+   statically copied into the image at build time.
 4. Enter http://<IP>:8000/ in a browser to see the application running.
 5. If you want to run your services in the background, you can pass the -d flag (for "detached" mode) to docker compose up and use docker compose ps to see what is currently running:
 docker compose up -d
